@@ -1,0 +1,40 @@
+
+<app-book></app-book>
+
+
+
+
+<app-registration-form></app-registration-form>
+
+<h3>Accessing Directive using @ViewChild</h3>
+<br />
+<br />
+@ViewChild Example :
+<div appColor>Modify Color of this Content</div>
+<br />
+<br />
+<div>
+  Modify Color :
+  <input type="radio" name="color" (click)="modifyColor('blue')" />Blue
+  <input type="radio" name="color" (click)="modifyColor('yellow')" />Yellow
+  <input type="radio" name="color" (click)="modifyColor('cyan')" />Cyan
+</div>
+
+<h3>Accessing Template variable using @ViewChild</h3>
+<div>
+  <table>
+    <tr>
+      <td>Employee Name :</td>
+      <td>
+        <input type="text" #empname />
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>Employee Number :</td>
+      <td>
+        <input type="number" #empnumber />
+      </td>
+    </tr>
+  </table>
+</div>
